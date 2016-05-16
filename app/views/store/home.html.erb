@@ -1,2 +1,13 @@
-<h1>Automated Store</h1>
+<title><%= @title %></title>
+<h1><%= @title %></h1>
 <p>You will be able to buy great things on this store.</p>
+
+<%=  link_to "Browse All Products", products_path, class: "button" %><br>
+
+<em>New:</em>
+<b><%= link_to @product.name, @product %></b>
+<p><%= @product.description %></p>
+<br>
+<em>Classic:</em>
+<b><%= @classic.name %></b>
+<p><%= @classic.description %></p>

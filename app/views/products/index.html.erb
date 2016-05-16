@@ -1,0 +1,7 @@
+<h1><%= @title %></h1>
+
+<ul>
+<% @products.each do |p| %>
+<li><b><%= link_to p.name, p %></li>
+<% end %>
+</ul>
