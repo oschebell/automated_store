@@ -3,6 +3,8 @@ class StoreController < ApplicationController
     @title = "Automated Store"
     @product = Product.newest
     @classic = Product.oldest
+    @categories = Category.all
+
   end
 
   def about
